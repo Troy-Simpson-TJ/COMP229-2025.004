@@ -5,19 +5,21 @@ import Footer from "./Footer";
 function Layout (){
   return (
     <div>
-      <header className = "navbar">
-        <img src ={image_logo} alt="Logo" className="logo"/>
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Me</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-      </header>
-      <Outlet/>
-      <Footer/>
-    </div>
+    <header className="navbar">
+      <img src={image_logo} alt="Logo" className="logo" />
+      <nav className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About Me</Link>
+        <Link to="/users">Users</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/contacts">Contacts</Link>
+      </nav>
+    </header>
+    <Outlet />
+    <Footer />
+  </div>
+  
   );
 }
 
